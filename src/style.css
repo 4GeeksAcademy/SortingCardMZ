@@ -1,1 +1,88 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: rgb(77, 189, 77);
+}
+
+.container-random-cards,
+.sorted-cards {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  margin: 3px;
+  min-height: 150px; /* Ajusta la altura según tu preferencia */
+  min-width: 100px; /* Ajusta el ancho según tu preferencia */
+  background-color: white;
+  border: 5px;
+  border-color: black;
+  border-radius: 7px;
+  padding: 10px;
+  position: relative;
+}
+
+.top-corner {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 30px; /* Ajusta el tamaño del símbolo según tu preferencia */
+}
+
+.bottom-corner {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 30px; /* Ajusta el tamaño del símbolo según tu preferencia */
+}
+
+.card-number {
+  margin: auto;
+  font-size: 30px; /* Ajusta el tamaño del número según tu preferencia */
+}
+
+& .spade:after {
+  content: "\2660";
+  font-size: 30px; /* Ajusta el tamaño del símbolo según tu preferencia */
+}
+
+.club:after {
+  content: "\2663";
+  font-size: 30px; /* Ajusta el tamaño del símbolo según tu preferencia */
+}
+
+.diamond:after {
+  content: "\2666";
+  color: red;
+  font-size: 30px; /* Ajusta el tamaño del símbolo según tu preferencia */
+}
+
+.heart:after {
+  content: "\2665";
+  color: red;
+  font-size: 30px; /* Ajusta el tamaño del símbolo según tu preferencia */
+}
+
+.row-cards {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.sorted-cards {
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 24px; /* Tamaño de letra para el texto "Select Sort Log" */
+}
+
+form {
+  font-size: 24px; /* Tamaño de letra para el formulario */
+}
+
+/* Opcional: ajusta el tamaño de letra para los botones según tus preferencias */
+button {
+  font-size: 16px;
+}
